@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo/logo.svg" type="image/x-icon">
+    <title>AUTO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="./index.html" class="logo">
+                        <img src="./img/logo/logo.svg" alt="" class="logo__img">
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a href="./new-cars.html" class="menu__list-link">NEW CARS</a></li>
+                            <!-- <li class="menu__list-item"><a href="#" class="menu__list-link">PRE-OWNEDCARS</a></li> -->
+                            <!-- <li class="menu__list-item"><a href="#" class="menu__list-link">FINANCE</a></li> -->
+                            <!-- <li class="menu__list-item"><a href="#" class="menu__list-link">LEASE VS BUY</a></li> -->
+                            <li class="menu__list-item"><a href="./contacts.html" class="menu__list-link">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <dialog class="number__phone-open" id="dialog">
+                <div class="number__phone-open__inner">
+
+                    <button class="close-modal" type="button">x</button>
+                    <h4 class="car__info-title">Toyota Crown 2023</h4>
+
+                    <div class="profile modal">
+
+                        <img src="./img/avatar/Ya_smeshnoi.jpg" alt="" class="car__info-salesman-avatar">
+
+                        <div class="modal__item">
+                            <p class="modal-text">Salesman</p>
+                            <h4 class="modal-user__name">Kirill</h4>
+                        </div>
+
+                    </div>
+
+                    <a href="tel:+380634220507" class="car__info-salesman__phone modal-window">
+                        <p class="phone__number-item">(063) 422 05 07</p>
+                    </a>
+
+                </div>
+            </dialog>
+
+            <button class="car__info-salesman__phone none open-modal" id="phone" type="button">
+                <p class="phone__number-item">(063) XXX XX XX</p>
+            </button>
+
+            <section class="car">
+                <div class="container">
+                    <div class="car__info">
+                        <img src="./img/card/card-1.jpg" alt="" class="car__info-img">
+                        <div class="car__info-content">
+                            <h4 class="car__info-title">Toyota Crown 2023</h4>
+                            <p class="car__price">$ 39900</p>
+                            <div class="car__info-salesman">
+                                <div class="profile">
+                                    <img src="./img/avatar/Ya_smeshnoi.jpg" alt="" class="car__info-salesman-avatar">
+                                    <div class="car__info-salesman__item">
+                                        <p class="car__info-salesman__item-text">Salesman</p>
+                                        <h4 class="car__info-salesman__item-user__name">Kirill</h4>
+                                    </div>
+                                </div>
+                                <p class="car__info-salesman__active">Active in 18:43</p>
+                                <p class="car__info-salesman__job"><span class="car__info-salesman__job-term"><img
+                                            src="./img/svg_icon/galochka.svg" alt="" class="galochka">1 year 8
+                                        months</span> job with D&M</p>
+                                <button class="car__info-salesman__phone open-modal" type="button">(063) XXX XX
+                                    XX</button>
+                            </div>
+                            <button class="car__info-share">
+                                <p class="car__info-share__item">Share</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="auto-car__info">
+                <div class="container">
+                    <h2 class="auto-car__info-title">Toyota Crown 2023</h2>
+                    <p class="car__price green">$ 39900</p>
+                    <div class="auto-car__info-basic__info">
+                        <ul class="auto-car__info-basic__info-list">
+                            <li class="auto-car__info-basic__info-item"><img src="./img/svg_icon/mileage.svg"
+                                    class="basic__info-icon" alt="">173 thousand km</li>
+                            <li class="auto-car__info-basic__info-item"><img src="./img/svg_icon/letter-a.svg" alt=""
+                                    class="basic__info-icon">Automatic</li>
+                            <li class="auto-car__info-basic__info-item"><img src="./img/svg_icon/gasoline.svg" alt=""
+                                    class="basic__info-icon gasoline">Gasoline, 2L</li>
+                        </ul>
+                    </div>
+                    <p class="auto-car__info-location">UA, Kyiv</p>
+                </div>
+            </section>
+
+            <section class="verified">
+                <div class="container">
+                    <div class="verified__content">
+                        <h4 class="verified__title">Verified D&M</h4>
+                        <p class="verified__when gray">Verified 1 august 2025</p>
+                        <ul class="verified__info">
+                            <li class="verified__info-item"><img src="./img/svg_icon/tick.svg" alt=""
+                                    class="tick">Toyota Crown 2023</li>
+                            <li class="verified__info-item gray-circle">Gray color</li>
+                            <li class="verified__info-item"><img src="./img/svg_icon/tick.svg" alt=""
+                                    class="tick">Gasoline, 2L</li>
+                            <li class="verified__info-item"><img src="./img/svg_icon/tick.svg" alt=""
+                                    class="tick">Missing in action</li>
+                            <li class="verified__info-item"><img src="./img/svg_icon/tick.svg" alt="" class="tick">Last
+                                transaction 17.07.2024 • re-registration to a new owner under a purchase and sale
+                                agreement (SG)</li>
+                            <li class="verified__info-item"><img src="./img/svg_icon/tick.svg" alt="" class="tick">6
+                                owners</li>
+                        </ul>
+                        <p class="info__audit gray">The verification information is valid as of 07/01/2025 and was
+                            obtained from open registers of the Ministry of Internal Affairs on 07/01/2025</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="car__description">
+                <div class="container">
+                    <h4 class="car__description-title">Description from the seller</h4>
+                    <p class="car__description-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                        ratione provident! Quis placeat optio impedit odio nemo deserunt quam rem? Delectus expedita
+                        debitis tempore et libero repudiandae quo magnam soluta.</p>
+                    <p class="car__description-type">Sedan</p>
+                    <div class="car__description-characteristic">
+                        <ul class="car__description-list">
+                            <li class="car__description-list-item gray">Engine</li>
+                            <li class="car__description-list-item">Gasoline, 2L</li>
+                        </ul>
+                        <ul class="car__description-list">
+                            <li class="car__description-list-item gray">Transmission</li>
+                            <li class="car__description-list-item">Automatic</li>
+                        </ul>
+                        <ul class="car__description-list">
+                            <li class="car__description-list-item gray">Occasion</li>
+                            <li class="car__description-list-item">Front</li>
+                        </ul>
+                        <ul class="car__description-list">
+                            <li class="car__description-list-item gray">Color</li>
+                            <li class="car__description-list-item">Gray</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <p class="footer__menu-title">Products</p>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Used</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">New</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Sell your car</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <p class="footer__menu-title">Resources</p>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Blog</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">FAQ</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Contact us</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <p class="footer__menu-title">Work With TrueCar</p>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Dealers</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Partners</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <p class="footer__menu-title">About</p>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">About us</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Team</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Careers</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="app">
+                    <li class="app__item">
+                        <a href="#" class="app__item-link">
+                            <img class="app__item-img" src="./img/logo/appstore.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="app__item">
+                        <a href="#" class="app__item-link">
+                            <img class="app__item-img" src="./img/logo/googleplay.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__copy">
+                    <p class="footer__copy-text">
+                        For questions about the TrueCar Auto Buying Service please call 1-888-878-3227.
+                        Certified Dealers are contractually obligated by TrueCar to meet certain customer service
+                        requirements and complete the TrueCar Dealer Certification Program.
+                    </p>
+                    <p class="footer__copy-text">
+                        TrueCar does not broker, sell, or lease motor vehicles. Unless otherwise noted, all vehicles
+                        shown on this website are offered for sale by licensed motor vehicle dealers. All vehicles are
+                        subject to prior sale. By accessing this website, you agree to the TrueCar Terms of Service and
+                        Privacy Policy.
+                    </p>
+                </div>
+                <nav class="copy__nav">
+                    <ul class="copy__nav-list">
+                        <li class="copy__nav-item">
+                            <a href="" class="copy__nav-link" htef="#">Terms of Service</a>
+                        </li>
+                        <li class="copy__nav-item">
+                            <a href="" class="copy__nav-link" htef="#">Privacy Policy</a>
+                        </li>
+                        <li class="copy__nav-item">
+                            <a href="" class="copy__nav-link" htef="#">Do Not Sell My Personal Information</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
