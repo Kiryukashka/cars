@@ -7,7 +7,7 @@ function navigation() {
   const header = document.createElement('header')
   header.className = 'header'
   
-    if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === '/index') {
+    if (window.location.pathname.endsWith('index.html') || window.location.pathname === './' || window.location.pathname === './index') {
       header.classList.add('header-main');
     }
 
