@@ -6,10 +6,14 @@ function navigation() {
 
   const header = document.createElement('header')
   header.className = 'header'
-  
-    if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === '/index') {
-      header.classList.add('header-main');
-    }
+
+  if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === '/index') {
+    header.classList.add('header-main');
+  }
+
+  if (window.location.href === 'https://kiryukashka.github.io/cars/') {
+    header.classList.add('header-main');
+  }
 
   mainContainer.prepend(header)
 
@@ -58,7 +62,7 @@ function navigation() {
   link2.setAttribute('href', './contacts.html')
   link2.innerText = 'CONTACT US'
   item2.appendChild(link2)
-  
+
   const burger = document.createElement('div')
   burger.className = 'burger'
   inner.appendChild(burger)
