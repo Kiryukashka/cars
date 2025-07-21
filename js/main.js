@@ -1,20 +1,9 @@
-function buttonBurger() {
-  const burgerBtn = document.querySelector('.burger')
-
-  function openButtonBurger() {
-    this.classList.toggle('burger__active')
-    document.querySelector('.menu').classList.toggle('open')
-  }
-
-  burgerBtn.addEventListener('click', openButtonBurger)
-}
-
 function tabs() {
   const tabItem = document.querySelectorAll('.tabs__btn-item')
   const tabContent = document.querySelectorAll('.tabs__content-item')
 
-  tabItem.forEach(function (element) {
-    element.addEventListener('click', open)
+  tabItem.forEach(function (e) {
+    e.addEventListener('click', open)
   })
 
   function open(event) {
@@ -91,8 +80,6 @@ function phone() {
     }
   })
 }
-
-buttonBurger()
 
 tabs()
 

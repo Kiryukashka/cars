@@ -1225,4 +1225,9 @@ h4 {
     .verified__content {
         max-width: 100%;
     }
+
+    .modal-window {
+        margin-bottom: 10px;
+        
+    }
 }
