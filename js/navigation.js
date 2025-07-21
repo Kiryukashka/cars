@@ -11,7 +11,7 @@ function navigation() {
   //   header.classList.add('header-main');
   // }
 
-  if (window.location.href === 'https://kiryukashka.github.io/cars/') {
+  if (window.location.href === 'https://kiryukashka.github.io/cars/' % window.location.href === 'https://kiryukashka.github.io/cars/index.html') {
     header.classList.add('header-main');
   }
 
