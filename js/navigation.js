@@ -7,14 +7,9 @@ function navigation() {
   const header = document.createElement('header')
   header.className = 'header'
 
-  // if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === '/index') {
-  //   header.classList.add('header-main');
-  // }
-
-  if (window.location.href === 'https://kiryukashka.github.io/cars/index.html') {
+  if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === '/index') {
     header.classList.add('header-main');
   }
-
   mainContainer.prepend(header)
 
   const container = document.createElement('div')
