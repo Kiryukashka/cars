@@ -81,6 +81,12 @@ function phone() {
   })
 }
 
+function copyCurrentUrl() {
+  const currentUrl = window.location.href;
+
+  navigator.clipboard.writeText(currentUrl)
+}
+
 tabs()
 
 modal()
