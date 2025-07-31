@@ -1,16 +1,6 @@
 function navigation() {
-  console.log('Функція navigation() викликана');
 
-  const mainContainer = document.querySelector('.wrapper')
-  console.log('mainContainer:', mainContainer);
-
-  const header = document.createElement('header')
-  header.className = 'header'
-
-  if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === '/index') {
-    header.classList.add('header-main');
-  }
-  mainContainer.prepend(header)
+  const header = document.querySelector('.header')
 
   const container = document.createElement('div')
   container.className = 'container'
