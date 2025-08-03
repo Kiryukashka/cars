@@ -60,15 +60,17 @@ h4 {
 }
 
 .showmore__link {
+    border: none;
     text-transform: uppercase;
     background-color: #151515;
     color: #fff;
-    padding: 13px;
+    padding: 15px;
     width: 225px;
     margin: 0 auto;
     text-align: center;
     display: block;
     transition: all 0.2s ease-in;
+    cursor: pointer;
 }
 
 .showmore__link:hover {
@@ -428,23 +430,10 @@ h4 {
     transition: color 0.2s ease-in;
 }
 
-.tabs__btn-item:hover {
-    color: #0066FF;
-}
-
-.tabs__content-item--active {
-    color: #0066FF;
-}
-
 .tabs__content-item {
-    display: none;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 100px 40px;
-}
-
-.tabs__content-item.tabs__content-item--active {
-    display: grid;
-    color: #151515;
 }
 
 /*Card*/
