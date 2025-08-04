@@ -1,4 +1,3 @@
-
 function modal() {
   const dialog = document.getElementById('dialog')
   const openModal = document.querySelectorAll('.open-modal')
@@ -61,7 +60,6 @@ function copyCurrentUrl() {
 
   navigator.clipboard.writeText(currentUrl)
 }
-
 
 modal()
 

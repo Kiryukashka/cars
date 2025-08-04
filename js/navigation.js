@@ -1,3 +1,16 @@
+const linkObj = [
+  {
+    id: 1,
+    name: 'NEW CARS',
+    url: './new-cars.html',
+  },
+  {
+    id: 2,
+    name: 'CONTACT US',
+    url: './contacts.html',
+  },
+]
+
 function navigation() {
 
   const header = document.querySelector('.header')
@@ -28,25 +41,19 @@ function navigation() {
   list.className = 'menu__list'
   nav.appendChild(list)
 
-  const item1 = document.createElement('li')
-  item1.className = 'menu__list-item'
-  list.appendChild(item1)
+  for (let i = 0; i < linkObj.length; i++) {
+    const item = linkObj[i]
 
-  const link1 = document.createElement('a')
-  link1.className = 'menu__list-link'
-  link1.setAttribute('href', './new-cars.html')
-  link1.innerText = 'NEW CARS'
-  item1.appendChild(link1)
+    const item1 = document.createElement('li')
+    item1.className = 'menu__list-item'
+    list.appendChild(item1)
 
-  const item2 = document.createElement('li')
-  item2.className = 'menu__list-item'
-  list.appendChild(item2)
-
-  const link2 = document.createElement('a')
-  link2.className = 'menu__list-link'
-  link2.setAttribute('href', './contacts.html')
-  link2.innerText = 'CONTACT US'
-  item2.appendChild(link2)
+    const link1 = document.createElement('a')
+    link1.className = 'menu__list-link'
+    link1.setAttribute('href', item.url)
+    link1.innerText = item.name
+    item1.appendChild(link1)
+  }
 
   const burger = document.createElement('div')
   burger.className = 'burger'
